@@ -1,0 +1,38 @@
+//electricity bill calculator
+#include <stdio.h>
+int main () {
+	int ID,Uconsumed;
+	char Cname [50];
+	float charge;
+	
+	printf("enter ID\n");
+	scanf("%d",&ID);
+	printf("enter Cname\n");
+	scanf("%s",Cname);
+	printf("\n%s",Cname);
+	printf("\nID%d",ID);
+	printf("\nenter consumed\n",Uconsumed);
+	
+	scanf("\n%d",&Uconsumed);
+if(Uconsumed >=199)
+{
+	charge=(Uconsumed*1.20);}
+	
+else if(Uconsumed>=200&&Uconsumed<400)
+
+{
+	charge=(Uconsumed*1.5);
+	}
+else if
+(Uconsumed>=400&&600){
+	charge=(Uconsumed*1.8);
+	}
+else if
+(Uconsumed >=600)
+{
+	charge=(Uconsumed*2.0);
+	}
+	printf("\ncharges:%f",charge);
+	return 0;
+}
+	
